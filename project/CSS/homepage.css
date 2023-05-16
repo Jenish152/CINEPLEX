@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  width: 100vw;
+  height: 50px;
+  background-color: black;
+  position: relative;
+}
+
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 50px;
+  height: 100%;
+  color: white;
+}
+
+.logo {
+  flex: 1;
+}
+.logo-tit {
+  font-size: 20px;
+}
+.menu {
+  flex: 6;
+  display: flex;
+}
+.list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+.list-item {
+  margin-right: 9px;
+}
+.list-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.profile {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.user-name {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  height: 50px;
+}
+
+.user-name img {
+  width: 30px;
+  height: 26px;
+  clip-path: circle(45%);
+  margin-right: 3px;
+}
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  margin-left: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.toggle-icon {
+  color: goldenrod;
+}
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 50px;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  /* justify-self: center; */
+  align-items: center;
+}
+
+.sidebar-icon {
+  color: white;
+  margin: 20px 0;
+}
+
+.container {
+  background-color: black;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  padding: 50px 0 0 0;
+  margin-left: 50px;
+  /* margin-top: 50px; */
+  width: calc(100vw - 50px);
+  height: 50vh;
+  background-image: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/113536-red-and-black-connected-lines-and-dots-background.jpg");
+  display: flex;
+}
+.content-title {
+  margin: 40px 0 20px 20px;
+  color: white;
+  width: 300px;
+  text-decoration: underline;
+}
+.description {
+  margin: 0 0 10px 20px;
+  color: aquamarine;
+  width: 400px;
+}
+.btn {
+  margin: 0 0 0 25px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(129, 16, 16);
+  color: white;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.container-r img {
+  width: 51vw;
+  height: 328px;
+  padding-left: 97px;
+}
+.movie-container {
+  padding-left: 80px;
+  margin-top: 15px;
+  padding-bottom: 40px;
+}
+.movie-title {
+  font-size: 35px;
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.movie-list {
+  display: flex;
+  transform: translateX(-250);
+}
+.movie-desc {
+  /* border: 2px solid white; */
+  color: white;
+}
+
+.movie-list-item ul {
+  margin-left: 36px;
+}
+.movie-list-item img {
+  transition: all 1s ease-in-out;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin: 15px;
+}
+.movie-list-item img:hover {
+  transform: scale(1.1);
+}
+.movie-watch-btn {
+  padding: 5px;
+  /* background-color: rgb(29, 112, 221); */
+  background-color: white;
+  border-radius: 7px;
+  margin-top: 5px;
+  /* margin-left:28px; */
+  display: inline;
+  outline: none;
+  border: none;
+}
+.movie-watch-btn a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.arrow {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding-right: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 923px) {
+  .menu {
+    flex: 4;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container-r img {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 732px) {
+  .description {
+    width: 300px;
+  }
+  .navbar {
+    height: 120px;
+    padding: 20px;
+  }
+  .logo,
+  .profile,
+  .menu {
+    flex: 1;
+  }
+  .menu {
+    margin-top: 6px;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .navbar-container {
+    flex-direction: column;
+  }
+  .toggle {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container-r img {
+    display: none;
+  }
+  .description {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .container-r img {
+    display: none;
+  }
+  .description {
+    width: 400px;
+  }
+  .navbar-container {
+    padding-left: 20px;
+  }
+}
+
+.navbar .active {
+  background-color: white;
+}
+.navbar-container .active {
+  color: black;
+}
+.user-name .active {
+  color: black;
+}
+.profile .active h6 {
+  color: black;
+}
+.toggle .active {
+  background-color: black;
+}
+.toggle-ball .active {
+  background-color: white;
+  transform: translateX(-0.5px);
+  left: 1px;
+}
+.sidebar .active {
+  background-color: white;
+}
+.sidebar-icon .active {
+  color: black;
+}
+.container .active {
+  background-color: white;
+}
+.movie-title .active {
+  color: black;
+}
+.movie-desc .active {
+  color: black;
+}
+.movie-watch-btn .active {
+  background-color: black;
+}
+.movie-watch-btn .active a {
+  color: white;
+}
+.arrow .active {
+  color: black;
+}
+.active {
+  background-color: white;
+  color: black;
+}
+.active a {
+  color: black;
+}
+.active-btn {
+  background-color: black;
+  color: white;
+}
+.active-btn a {
+  color: white;
+}
+.active-toggle {
+  background-color: black;
+  border: 2px solid black;
+}
+.active-toggle .toggle-ball {
+  color: white;
+  transform: translateX(-0.5px);
+  left: 1px;
+}
